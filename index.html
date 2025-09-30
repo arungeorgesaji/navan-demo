@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navan - Autonomous Water Cleanup Boat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <h1>Navan - Autonomous Water Cleanup Boat</h1>
+      <p>Navan is an autonomous robotic boat built to tackle plastic pollution in waterbodies. 
+         Using computer vision and intelligent navigation, Navan detects, locates, and collects plastic waste, 
+         helping to keep rivers, lakes, and coastal areas clean.</p>
+      
+      <div class="demo-container">
+        <div class="terminal-bar">
+          <div class="terminal-button close"></div>
+          <div class="terminal-button minimize"></div>
+          <div class="terminal-button maximize"></div>
+          <div class="terminal-title">Navan Demo</div>
+        </div>
+        <div class="demo-content">
+          <video controls>
+            <source src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/8b6bc1f662610c667741f176e8cc709fd97cb825_navan-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+      <div class="features-grid">
+        
+        <div class="feature-card">
+          <h3>Autonomous Operation</h3>
+          <p>Plastic detection using YOLOv8, smart navigation, adaptive speed control, and systematic search patterns.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h3>Manual Control</h3>
+          <p>Web dashboard with keyboard controls, real-time camera feed, and variable speed adjustments.</p>
+        </div>
+        
+        <div class="feature-card">
+          <h3>System Features</h3>
+          <p>Dual mode operation (Manual & Autonomous), WiFi communication via ESP32, and real-time status monitoring.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="install" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="code-block">
+        <pre>
+<strong>Autonomous Mode</strong>
+1. Camera captures waterbody images
+2. YOLOv8 detects plastic in real-time
+3. Navigation system targets waste
+4. Speed adapts as boat approaches
+5. Performs search patterns if no plastic found
+
+<strong>Manual Mode</strong>
+1. Operator controls via web interface
+2. Commands sent to Raspberry Pi Flask API
+3. API relays to ESP32 motor controller
+4. ESP32 executes movement commands
+5. Live camera provides real-time feedback
+        </pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="repositories">
+    <div class="container">
+      <h2 class="section-title">Repositories</h2>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <h3><a href="https://github.com/theerathile-tech/robot-planning" target="_blank">robot-planning</a></h3>
+          <p>Brain of Navan – AI & control system. Flask REST API, YOLOv8 integration, camera image processing, and navigation logic.</p>
+          <p><em>Tech Stack:</em> Python, Flask, OpenCV, YOLOv8</p>
+        </div>
+
+        <div class="feature-card">
+          <h3><a href="https://github.com/theerathile-tech/robot-server" target="_blank">robot-server</a></h3>
+          <p>Web dashboard with manual control, real-time camera feed, and mode switching.</p>
+          <p><em>Tech Stack:</em> HTML5, CSS3, JavaScript</p>
+        </div>
+
+        <div class="feature-card">
+          <h3><a href="https://github.com/theerathile-tech/robot-client" target="_blank">robot-client</a></h3>
+          <p>ESP32 hardware control – WiFi server, brushless motor control, and real-time command execution.</p>
+          <p><em>Tech Stack:</em> C++, Arduino, ESP32</p>
+        </div>
+
+        <div class="feature-card">
+          <h3><a href="https://github.com/theerathile-tech/plastic_detection" target="_blank">plastic_detection</a></h3>
+          <p>YOLOv8 model training for underwater plastic detection. Pre-trained weights available.</p>
+          <p><em>Tech Stack:</em> Python, YOLOv8</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Navan Project. Built to clean our oceans and rivers.</p>
+  </footer>
+</body>
+</html>
+
